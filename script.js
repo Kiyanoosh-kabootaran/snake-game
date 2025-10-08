@@ -11,6 +11,7 @@ let setIntervalId;
 let score = 0;
 let highScore = localStorage.getItem("high-score") || 0; 
 highScoreElement.innerText = `High Score: ${highScore}`;
+const controls = document.querySelectorAll(".controls i");
 
 const changeFoodPosition = () => {
   //Passing a random 0-30 value as food position
@@ -42,6 +43,11 @@ const changeDirection = (e) => {
     velocityX = 1;
   }
 }
+
+controls.forEach(key => {
+  //Calling changeDirection on each key click and passing key dataset value as an object
+  key.addEventListener("click", ()=> changeDirection({key: key.dataset.key}));
+})
 
 const initGame = () => {
   if(gameOver) handleGameOver();
