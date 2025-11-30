@@ -16,7 +16,7 @@
 
 # 🌐 Demo
 
-### Live Demo:  [snakegame]()
+### Live Demo:  [snakegame](https://kiyanoosh-kabootaran.github.io/snake-game/)
 
 <br>
 
@@ -50,12 +50,12 @@
 
 ### 1. Clone the repository:
  ```bash
-    git clone https://github.com/<your-username>/<your-repo-name>.git
+    git clone https://github.com/Kiyanoosh-kabootaran/snake-game.git
  ```
 
  ### 2. Navigate to the folder:
  ```bash
-    cd <your-repo-name>
+    cd <snake-game>
  ```
 
  ### 3. Run the game by opening:
